@@ -1,0 +1,192 @@
+/* --- Reset Básico e Definições Gerais --- */
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --- Container Principal --- */
+.container {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100vw;
+}
+
+/* --- Cabeçalho e Navegação --- */
+.site-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    color: #8E44AD; /* Roxo */
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a.active {
+    color: #8E44AD; /* Roxo */
+}
+
+/* --- Conteúdo Principal --- */
+.main-content {
+    /* Margens laterais de 15% ou mais */
+    min-height: 700px;
+    width: 60%;
+    margin: 2rem 15%; 
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.main-content h1, .main-content h2 {
+    color: #8E44AD;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+}
+
+.main-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.main-content p {
+    margin-bottom: 1.2rem;
+}
+
+.main-content strong {
+    color: #333;
+}
+
+/* --- Estilos específicos das páginas --- */
+
+/* Página Home (index.html) */
+.hero {
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Página Dubladores (dubladores.html) */
+.dublador-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+.dublador-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.dublador-card ul {
+    padding-left: 20px;
+}
+
+.dublador-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Página IA (ia.html) */
+.pros-cons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pros-cons > div {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.pros-cons .pros {
+    background-color: #e8f5e9; /* Verde claro */
+    border: 1px solid #a5d6a7;
+}
+
+.pros-cons .cons {
+    background-color: #ffebee; /* Vermelho claro */
+    border: 1px solid #ef9a9a;
+}
+
+.pros-cons h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.pros-cons ul {
+    list-style: none;
+}
+
+.pros-cons .pros ul li::before {
+    margin-right: 10px;
+}
+
+.pros-cons .cons ul li::before {
+    margin-right: 10px;
+}
+
+.pros-cons li {
+    list-style-type: disc;
+}
+
+
+/* --- Rodapé --- */
+.site-footer {
+    width: 100vw;
+    text-align: center;
+    height: 60px;
+    margin-top: 2rem;
+    background-color: #333;
+    color: #aaa;
+}
